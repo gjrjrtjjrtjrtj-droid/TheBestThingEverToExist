@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cuvjun6jv07js" path="res://GameObjects/Block/Block.tscn" id="1_o6mkr"]
 [ext_resource type="PackedScene" uid="uid://ck6g55qtjh87l" path="res://GameObjects/Player/Bob.tscn" id="2_qmtf6"]
 [ext_resource type="PackedScene" uid="uid://ceoa4b3gs1abr" path="res://GameObjects/Winnar/WinnarStar.tscn" id="3_uawph"]
+[ext_resource type="PackedScene" uid="uid://ctkylj8vq8o5h" path="res://GameObjects/bad apple/bapple.tscn" id="4_52x1o"]
 
 [node name="Node2D" type="Node2D" unique_id=137747988]
 
@@ -27,3 +28,6 @@ position = Vector2(186, 46)
 
 [node name="Block5" parent="." unique_id=838919489 instance=ExtResource("1_o6mkr")]
 position = Vector2(560, 82)
+
+[node name="Bapple" parent="." unique_id=255428371 instance=ExtResource("4_52x1o")]
+position = Vector2(342, -167)

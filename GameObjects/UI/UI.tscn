@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dc5metrm2tbk0"]
+
+[ext_resource type="Script" uid="uid://bndnjxyiivm2s" path="res://GameObjects/UI/label.gd" id="1_qm3eh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y0jak"]
+font_size = 23
+
+[node name="Ui" type="Control" unique_id=954088564]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=664668557]
+layout_mode = 0
+offset_right = 250.09305
+offset_bottom = 36.84211
+scale = Vector2(1.1315789, 1.52)
+text = "Score: "
+label_settings = SubResource("LabelSettings_y0jak")
+script = ExtResource("1_qm3eh")

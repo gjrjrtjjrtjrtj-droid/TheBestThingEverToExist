@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ceoa4b3gs1abr"]
+
+[ext_resource type="Script" uid="uid://bf4r28xjxaa1g" path="res://GameObjects/Winnar/winnar_star.gd" id="1_850b8"]
+[ext_resource type="Texture2D" uid="uid://cjec3cwcwu51w" path="res://GameObjects/assets/EndStar.png" id="1_qai15"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_850b8"]
+size = Vector2(116, 128)
+
+[node name="WinnarStar" type="Area2D" unique_id=642081613]
+script = ExtResource("1_850b8")
+
+[node name="EndStar" type="Sprite2D" parent="." unique_id=1013546077]
+position = Vector2(-1, 0)
+scale = Vector2(0.19313551, 0.19313551)
+texture = ExtResource("1_qai15")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1295610543]
+position = Vector2(2, 4)
+scale = Vector2(1.1399318, 1.0044248)
+shape = SubResource("RectangleShape2D_850b8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

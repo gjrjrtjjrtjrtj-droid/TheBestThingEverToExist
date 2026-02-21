@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bwcfww0n68buj"]
+
+[ext_resource type="PackedScene" uid="uid://cuvjun6jv07js" path="res://GameObjects/Block/Block.tscn" id="1_o6mkr"]
+[ext_resource type="PackedScene" uid="uid://ck6g55qtjh87l" path="res://GameObjects/Player/Bob.tscn" id="2_qmtf6"]
+[ext_resource type="PackedScene" uid="uid://ceoa4b3gs1abr" path="res://GameObjects/Winnar/WinnarStar.tscn" id="3_uawph"]
+
+[node name="Node2D" type="Node2D" unique_id=137747988]
+
+[node name="Block" parent="." unique_id=1427464235 instance=ExtResource("1_o6mkr")]
+position = Vector2(0, 61)
+scale = Vector2(1.0025651, 1.0170302)
+
+[node name="Bob" parent="." unique_id=1201037633 instance=ExtResource("2_qmtf6")]
+position = Vector2(-1, -5)
+
+[node name="Block2" parent="." unique_id=282745520 instance=ExtResource("1_o6mkr")]
+position = Vector2(390, 59)
+
+[node name="Block3" parent="." unique_id=1316448972 instance=ExtResource("1_o6mkr")]
+position = Vector2(716, 70)
+
+[node name="WinnarStar" parent="." unique_id=642081613 instance=ExtResource("3_uawph")]
+position = Vector2(716, -33)
+
+[node name="Block4" parent="." unique_id=802656745 instance=ExtResource("1_o6mkr")]
+position = Vector2(186, 46)
+
+[node name="Block5" parent="." unique_id=838919489 instance=ExtResource("1_o6mkr")]
+position = Vector2(560, 82)

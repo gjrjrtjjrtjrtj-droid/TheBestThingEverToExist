@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://xbbuhqokbjux"]
+
+[ext_resource type="Script" uid="uid://bj4bxpls1hf8l" path="res://GameObjects/Player/Tracker/point_tracker.gd" id="1_r1c8h"]
+
+[node name="PointTracker" type="Node" unique_id=243923877]
+script = ExtResource("1_r1c8h")
+
+[node name="Timer" type="Timer" parent="." unique_id=538923766]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

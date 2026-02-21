@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://phdyenkqb3y0"]
+
+[ext_resource type="Script" uid="uid://b8njad0p0eo21" path="res://GameObjects/Winnar/WinnarScreen/winnar_screen.gd" id="1_j7jmj"]
+[ext_resource type="Script" uid="uid://bndnjxyiivm2s" path="res://GameObjects/UI/label.gd" id="1_tkmbj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j7jmj"]
+font_size = 19
+
+[node name="WinnarScreen" type="Node2D" unique_id=1607865154]
+script = ExtResource("1_j7jmj")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1056319931]
+position = Vector2(0, -1)
+
+[node name="Label" type="Label" parent="Camera2D" unique_id=1708203652]
+offset_left = -373.0
+offset_top = -282.0
+offset_right = -237.0
+offset_bottom = -255.0
+scale = Vector2(5.4, 5.4)
+text = "Your Winner!!!!"
+label_settings = SubResource("LabelSettings_j7jmj")
+
+[node name="Label2" type="Label" parent="Camera2D" unique_id=1747393688]
+offset_left = -366.0
+offset_top = -8.0
+offset_right = -230.0
+offset_bottom = 19.0
+scale = Vector2(5.4, 5.4)
+text = "Score: "
+label_settings = SubResource("LabelSettings_j7jmj")
+script = ExtResource("1_tkmbj")

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ck6g55qtjh87l"]
+
+[ext_resource type="Script" uid="uid://bqlx4lmlq8dc3" path="res://GameObjects/Player/bob.gd" id="1_qctaj"]
+[ext_resource type="Texture2D" uid="uid://coac3ooiofwax" path="res://GameObjects/assets/Guy.png" id="1_vvlcm"]
+[ext_resource type="PackedScene" uid="uid://dc5metrm2tbk0" path="res://GameObjects/UI/UI.tscn" id="3_3s0fw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vvlcm"]
+radius = 18.0
+height = 82.0
+
+[node name="Bob" type="CharacterBody2D" unique_id=1869527939]
+script = ExtResource("1_qctaj")
+
+[node name="Guy" type="Sprite2D" parent="." unique_id=1635957259]
+position = Vector2(1, -1)
+scale = Vector2(0.087, 0.087)
+texture = ExtResource("1_vvlcm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203860690]
+shape = SubResource("CapsuleShape2D_vvlcm")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1565315063]
+
+[node name="Ui" parent="." unique_id=954088564 instance=ExtResource("3_3s0fw")]
+offset_left = -571.0
+offset_top = -317.0
+offset_right = -571.0
+offset_bottom = -317.0

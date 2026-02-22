@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://by1wkqs6vpk4d" path="res://GameObjects/Meteor/MeteorSpawner.tscn" id="6_nk1il"]
 [ext_resource type="PackedScene" uid="uid://ko0jvfgnj2hv" path="res://GameObjects/Potion/PotionHandler.tscn" id="7_22cqp"]
 [ext_resource type="PackedScene" uid="uid://cjmax0nmvjgh7" path="res://GameObjects/Potion/PotionSpawnPoint.tscn" id="8_wqlfs"]
+[ext_resource type="PackedScene" uid="uid://bfrlvvrhfp6ey" path="res://GameObjects/RatingSystem/DownVote.tscn" id="9_wqlfs"]
+[ext_resource type="PackedScene" uid="uid://ekcl5yt1kcvt" path="res://GameObjects/RatingSystem/UpVote.tscn" id="10_py82k"]
 
 [node name="Node2D" type="Node2D" unique_id=137747988]
 
@@ -114,3 +116,29 @@ position = Vector2(1007, 426)
 
 [node name="PotionSpawnPoint11" parent="PotionHandler" unique_id=330497787 instance=ExtResource("8_wqlfs")]
 position = Vector2(1195, 412)
+
+[node name="Block11" parent="." unique_id=199977845 instance=ExtResource("1_o6mkr")]
+position = Vector2(-291, 61)
+
+[node name="Block12" parent="." unique_id=1774545734 instance=ExtResource("1_o6mkr")]
+position = Vector2(-611, 63)
+
+[node name="Block13" parent="." unique_id=506416958 instance=ExtResource("1_o6mkr")]
+position = Vector2(-915, 65)
+
+[node name="Block14" parent="." unique_id=1242870484 instance=ExtResource("1_o6mkr")]
+position = Vector2(-1161, 89)
+
+[node name="DownVote" parent="." unique_id=413812293 instance=ExtResource("9_wqlfs")]
+position = Vector2(-1387, -54)
+scale = Vector2(1.0195265, 0.98905253)
+
+[node name="DownVote2" parent="." unique_id=1851312377 instance=ExtResource("10_py82k")]
+position = Vector2(-1564, 210)
+
+[node name="MeteorSpawner7" parent="." unique_id=1361188479 instance=ExtResource("6_nk1il")]
+position = Vector2(-1035, -663)
+
+[node name="MeteorSpawner8" parent="." unique_id=1243088777 instance=ExtResource("6_nk1il")]
+position = Vector2(-718, -701.00006)
+scale = Vector2(-0.13098702, -0.15442468)

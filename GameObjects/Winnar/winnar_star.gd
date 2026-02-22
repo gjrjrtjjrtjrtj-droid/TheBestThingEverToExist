@@ -12,5 +12,5 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	if body.get_name() == "Bob":
+	if body.get_name() == "Bob" and PointTracker.canWin:
 		get_tree().change_scene_to_file("res://GameObjects/Winnar/WinnarScreen/WinnarScreen.tscn")

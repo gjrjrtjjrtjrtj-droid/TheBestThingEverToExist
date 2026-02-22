@@ -14,6 +14,7 @@ func die():
 		return
 	position = spawnPos;
 	PointTracker.score -= 10;
+	PointTracker.canWin = false
 	get_parent().get_node("PotionHandler").respawnPotion()
 	
 

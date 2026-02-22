@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bfrlvvrhfp6ey"]
+
+[ext_resource type="Script" uid="uid://bkd2g18dgitb6" path="res://GameObjects/RatingSystem/down_vote.gd" id="1_mbpnx"]
+[ext_resource type="Texture2D" uid="uid://2nju0yt5bnrs" path="res://GameObjects/assets/Dislike.png" id="2_rfn7l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rjoco"]
+
+[node name="DownVote" type="Node2D" unique_id=413812293]
+script = ExtResource("1_mbpnx")
+
+[node name="Dislike" type="Sprite2D" parent="." unique_id=164576937]
+position = Vector2(-1, 1)
+scale = Vector2(0.375, 0.3498452)
+texture = ExtResource("2_rfn7l")
+
+[node name="Area2D" type="Area2D" parent="Dislike" unique_id=1230386605]
+scale = Vector2(2.4571428, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dislike/Area2D" unique_id=733756229]
+scale = Vector2(8.07597, -2.4300883)
+shape = SubResource("CircleShape2D_rjoco")
+
+[connection signal="input_event" from="Dislike/Area2D" to="." method="_on_area_2d_input_event"]

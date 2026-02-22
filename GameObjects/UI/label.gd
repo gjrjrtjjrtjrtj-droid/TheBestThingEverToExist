@@ -8,4 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	text = "Score: " + str(PointTracker.score) + " /n Game Downvoted: " + str(PointTracker.canWin)
+
+	text = "Score: " + str(PointTracker.score) + " /n Game Downvoted: " + str(PointTracker.canWin) + " Bonus Jumps " + str(PointTracker.bonusJumps)

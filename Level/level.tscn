@@ -137,8 +137,8 @@ scale = Vector2(1.0195265, 0.98905253)
 position = Vector2(-1564, 210)
 
 [node name="MeteorSpawner7" parent="." unique_id=1361188479 instance=ExtResource("6_nk1il")]
-position = Vector2(-1035, -663)
+position = Vector2(-1069, -658.99994)
 
 [node name="MeteorSpawner8" parent="." unique_id=1243088777 instance=ExtResource("6_nk1il")]
-position = Vector2(-718, -701.00006)
+position = Vector2(-752, -697)
 scale = Vector2(-0.13098702, -0.15442468)

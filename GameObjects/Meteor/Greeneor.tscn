@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://baubysxkdcwj1"]
+
+[ext_resource type="Script" uid="uid://dp66ieaqii0v5" path="res://GameObjects/Meteor/greeneor.gd" id="1_tejcn"]
+[ext_resource type="Texture2D" uid="uid://b0dmkwk6cvvwj" path="res://GameObjects/assets/greeneor.png" id="2_tejcn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k5ofc"]
+radius = 36.67424
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftvcu"]
+size = Vector2(73, 15)
+
+[node name="MeteorProjectile" type="CharacterBody2D" unique_id=1151907903]
+script = ExtResource("1_tejcn")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1567239610]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1617801862]
+shape = SubResource("CircleShape2D_k5ofc")
+
+[node name="Meteor" type="Sprite2D" parent="Area2D" unique_id=1138352322]
+position = Vector2(-1.999999, -1.9999962)
+scale = Vector2(0.13089053, 0.13089053)
+texture = ExtResource("2_tejcn")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1837571149]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=255616080]
+position = Vector2(1.5, -38.5)
+shape = SubResource("RectangleShape2D_ftvcu")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]

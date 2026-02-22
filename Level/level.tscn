@@ -22,10 +22,10 @@ scale = Vector2(1.0025651, 1.0170302)
 
 [node name="Block" parent="Block" unique_id=1599952663 instance=ExtResource("1_o6mkr")]
 position = Vector2(2481.6343, -37.36369)
-scale = Vector2(1.0025651, 1.0170302)
+scale = Vector2(4.2709384, 1.0074215)
 
 [node name="Bob" parent="." unique_id=1201037633 instance=ExtResource("2_qmtf6")]
-position = Vector2(-1, -5)
+position = Vector2(2496, -165)
 
 [node name="Block2" parent="." unique_id=282745520 instance=ExtResource("1_o6mkr")]
 position = Vector2(390, 59)

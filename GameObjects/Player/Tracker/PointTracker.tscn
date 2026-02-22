@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://xbbuhqokbjux"]
 
 [ext_resource type="Script" uid="uid://bj4bxpls1hf8l" path="res://GameObjects/Player/Tracker/point_tracker.gd" id="1_r1c8h"]
+[ext_resource type="AudioStream" uid="uid://dvtqcp7l5np2t" path="res://GameObjects/assets/freesound_community-gun-shot-1-7069.mp3" id="2_cp125"]
 
 [node name="PointTracker" type="Node" unique_id=243923877]
 script = ExtResource("1_r1c8h")
@@ -8,4 +9,12 @@ script = ExtResource("1_r1c8h")
 [node name="Timer" type="Timer" parent="." unique_id=538923766]
 autostart = true
 
+[node name="guntimer" type="Timer" parent="." unique_id=1765978191]
+wait_time = 3.0
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=867285995]
+stream = ExtResource("2_cp125")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="guntimer" to="." method="_on_guntimer_timeout"]

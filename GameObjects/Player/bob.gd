@@ -32,5 +32,5 @@ func _physics_process(delta):
 		
 	
 	move_and_slide()
-	if position.y > 100:
+	if position.y > 400:
 		die()

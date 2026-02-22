@@ -17,6 +17,6 @@ func _on_timer_timeout():
 		return
 	print("Meteor spawned")
 	var trueMeteor = meteor.instantiate()
-	trueMeteor.velocity = Vector2(rng.randf_range(-200,200),rng.randf_range(100,1000))
+	trueMeteor.velocity = Vector2(rng.randf_range(-200,200),rng.randf_range(100,500))
 	add_child(trueMeteor)
 	

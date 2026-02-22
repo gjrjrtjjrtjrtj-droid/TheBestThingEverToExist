@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
+const acceleration = 20
 const JUMP_VELOCITY = -400.0
 var spawnPos = Vector2(0,0)
 func _ready():
@@ -22,9 +23,13 @@ func _physics_process(delta):
 
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = move_toward(velocity.x, SPEED * direction, acceleration)
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		if not is_on_floor():
+			velocity.x = move_toward(velocity.x, 0, acceleration)
+		else:
+			velocity.x = move_toward(velocity.x, 0, acceleration / 8)
+		
 	
 	move_and_slide()
 	if position.y > 100:

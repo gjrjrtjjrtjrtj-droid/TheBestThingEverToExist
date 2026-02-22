@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://by1wkqs6vpk4d"]
+
+[ext_resource type="Script" uid="uid://b57sa4x2ahtlw" path="res://GameObjects/Meteor/meteor_spawner.gd" id="1_n0o1u"]
+
+[node name="MeteorSpawner" type="Node2D" unique_id=10188247]
+script = ExtResource("1_n0o1u")
+
+[node name="Timer" type="Timer" parent="." unique_id=1982810062]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

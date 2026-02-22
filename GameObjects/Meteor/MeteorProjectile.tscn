@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bywrn88l365fr"]
+
+[ext_resource type="Script" uid="uid://d0hkprqnnuc8t" path="res://GameObjects/Meteor/meteor_projectile.gd" id="1_ftvcu"]
+[ext_resource type="Texture2D" uid="uid://gnoukchn7qm0" path="res://GameObjects/assets/Meteor.png" id="2_iwr2s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k5ofc"]
+radius = 36.67424
+
+[node name="MeteorProjectile" type="CharacterBody2D" unique_id=1151907903]
+script = ExtResource("1_ftvcu")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1567239610]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1617801862]
+shape = SubResource("CircleShape2D_k5ofc")
+
+[node name="Meteor" type="Sprite2D" parent="Area2D" unique_id=1138352322]
+position = Vector2(-1.999999, -1.9999962)
+scale = Vector2(0.13089053, 0.13089053)
+texture = ExtResource("2_iwr2s")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

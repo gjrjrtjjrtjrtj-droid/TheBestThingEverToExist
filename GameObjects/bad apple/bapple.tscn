@@ -5,8 +5,10 @@
 [node name="Bapple" type="Node2D" unique_id=255428371]
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1531844531]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -52.0
+offset_top = -13.0
+offset_right = 428.0
+offset_bottom = 347.0
 stream = ExtResource("1_frwp7")
 speed_scale = 2.047
 autoplay = true

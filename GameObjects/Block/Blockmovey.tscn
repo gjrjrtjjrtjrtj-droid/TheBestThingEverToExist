@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cl2ppnpwahr5y"]
+
+[ext_resource type="Script" uid="uid://dxv6np2dxlbx6" path="res://GameObjects/Block/blockmovey.gd" id="1_g5ra2"]
+[ext_resource type="Texture2D" uid="uid://cx0njvooroy4t" path="res://GameObjects/assets/GreyBlock.png" id="1_reds8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dxpis"]
+size = Vector2(77, 58)
+
+[node name="Block" type="StaticBody2D" unique_id=1427464235]
+script = ExtResource("1_g5ra2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=715735649]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_dxpis")
+
+[node name="GreyBlock" type="Sprite2D" parent="." unique_id=1012014549]
+position = Vector2(0.4999993, 0.9999974)
+scale = Vector2(0.077, 0.057999995)
+texture = ExtResource("1_reds8")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ko0jvfgnj2hv"]
+
+[ext_resource type="Script" uid="uid://lp4oxmr8sp40" path="res://GameObjects/Potion/potion_handler.gd" id="1_hcrfb"]
+
+[node name="PotionHandler" type="Node2D" unique_id=165176157]
+script = ExtResource("1_hcrfb")

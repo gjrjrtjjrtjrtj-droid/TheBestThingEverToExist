@@ -6,11 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://ctkylj8vq8o5h" path="res://GameObjects/bad apple/bapple.tscn" id="4_52x1o"]
 [ext_resource type="PackedScene" uid="uid://cl2ppnpwahr5y" path="res://GameObjects/Block/Blockmovey.tscn" id="6_d6qko"]
 [ext_resource type="PackedScene" uid="uid://by1wkqs6vpk4d" path="res://GameObjects/Meteor/MeteorSpawner.tscn" id="6_nk1il"]
+[ext_resource type="PackedScene" uid="uid://ko0jvfgnj2hv" path="res://GameObjects/Potion/PotionHandler.tscn" id="7_22cqp"]
+[ext_resource type="PackedScene" uid="uid://cjmax0nmvjgh7" path="res://GameObjects/Potion/PotionSpawnPoint.tscn" id="8_wqlfs"]
 
 [node name="Node2D" type="Node2D" unique_id=137747988]
 
 [node name="Bapple" parent="." unique_id=255428371 instance=ExtResource("4_52x1o")]
-position = Vector2(64, -797)
+position = Vector2(64, -301)
 
 [node name="Block" parent="." unique_id=1427464235 instance=ExtResource("1_o6mkr")]
 position = Vector2(0, 61)
@@ -76,3 +78,39 @@ position = Vector2(1711, -874)
 
 [node name="MeteorSpawner6" parent="." unique_id=715213571 instance=ExtResource("6_nk1il")]
 position = Vector2(2039, -907)
+
+[node name="PotionHandler" parent="." unique_id=165176157 instance=ExtResource("7_22cqp")]
+position = Vector2(962, -472)
+
+[node name="PotionSpawnPoint2" parent="PotionHandler" unique_id=2077573872 instance=ExtResource("8_wqlfs")]
+position = Vector2(-561, 452)
+
+[node name="PotionSpawnPoint" parent="PotionHandler" unique_id=1719370132 instance=ExtResource("8_wqlfs")]
+position = Vector2(-774, 488)
+
+[node name="PotionSpawnPoint3" parent="PotionHandler" unique_id=973759085 instance=ExtResource("8_wqlfs")]
+position = Vector2(23, 448)
+
+[node name="PotionSpawnPoint4" parent="PotionHandler" unique_id=2031089829 instance=ExtResource("8_wqlfs")]
+position = Vector2(271, 469)
+
+[node name="PotionSpawnPoint5" parent="PotionHandler" unique_id=396537806 instance=ExtResource("8_wqlfs")]
+position = Vector2(-335, 509)
+
+[node name="PotionSpawnPoint6" parent="PotionHandler" unique_id=153671701 instance=ExtResource("8_wqlfs")]
+position = Vector2(-187, 476)
+
+[node name="PotionSpawnPoint7" parent="PotionHandler" unique_id=1353591260 instance=ExtResource("8_wqlfs")]
+position = Vector2(485, 415)
+
+[node name="PotionSpawnPoint8" parent="PotionHandler" unique_id=1123955282 instance=ExtResource("8_wqlfs")]
+position = Vector2(679, 455)
+
+[node name="PotionSpawnPoint9" parent="PotionHandler" unique_id=1687795442 instance=ExtResource("8_wqlfs")]
+position = Vector2(827, 431)
+
+[node name="PotionSpawnPoint10" parent="PotionHandler" unique_id=2111780268 instance=ExtResource("8_wqlfs")]
+position = Vector2(1007, 426)
+
+[node name="PotionSpawnPoint11" parent="PotionHandler" unique_id=330497787 instance=ExtResource("8_wqlfs")]
+position = Vector2(1195, 412)

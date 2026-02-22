@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+var hasPot = false
 const SPEED = 300.0
 const acceleration = 20
 const JUMP_VELOCITY = -400.0
@@ -9,8 +9,12 @@ func _ready():
 	spawnPos = position
 
 func die():
+	if hasPot:
+		hasPot = false
+		return
 	position = spawnPos;
 	PointTracker.score -= 10;
+	get_parent().get_node("PotionHandler").respawnPotion()
 	
 
 func _physics_process(delta):

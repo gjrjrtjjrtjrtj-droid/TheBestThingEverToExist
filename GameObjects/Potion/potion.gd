@@ -19,14 +19,7 @@ func _on_area_2d_area_entered(area):
 
 func _on_area_2d_body_entered(body):
 	if body.get_name() == "Bob":
-		body.die()
+		body.hasPot = true
 		queue_free()
 		
  
-
-
-func _on_area_2d_2_body_entered(body):
-	if body.get_name() == "Bob":
-		body.velocity.y = -400.0
-		PointTracker.score += 5
-		queue_free()

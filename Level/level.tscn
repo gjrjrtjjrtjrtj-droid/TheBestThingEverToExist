@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ck6g55qtjh87l" path="res://GameObjects/Player/Bob.tscn" id="2_qmtf6"]
 [ext_resource type="PackedScene" uid="uid://ceoa4b3gs1abr" path="res://GameObjects/Winnar/WinnarStar.tscn" id="3_uawph"]
 [ext_resource type="PackedScene" uid="uid://ctkylj8vq8o5h" path="res://GameObjects/bad apple/bapple.tscn" id="4_52x1o"]
+[ext_resource type="PackedScene" uid="uid://cl2ppnpwahr5y" path="res://GameObjects/Block/Blockmovey.tscn" id="6_d6qko"]
 [ext_resource type="PackedScene" uid="uid://by1wkqs6vpk4d" path="res://GameObjects/Meteor/MeteorSpawner.tscn" id="6_nk1il"]
 
 [node name="Node2D" type="Node2D" unique_id=137747988]
@@ -28,17 +29,8 @@ position = Vector2(390, 59)
 [node name="Block2" parent="Block2" unique_id=1277816942 instance=ExtResource("1_o6mkr")]
 position = Vector2(688, -21)
 
-[node name="Block3" parent="." unique_id=1316448972 instance=ExtResource("1_o6mkr")]
-position = Vector2(716, 70)
-
 [node name="WinnarStar" parent="." unique_id=642081613 instance=ExtResource("3_uawph")]
 position = Vector2(1432, -36)
-
-[node name="Block4" parent="." unique_id=802656745 instance=ExtResource("1_o6mkr")]
-position = Vector2(186, 46)
-
-[node name="Block4" parent="Block4" unique_id=989617547 instance=ExtResource("1_o6mkr")]
-position = Vector2(1052, -25)
 
 [node name="Block5" parent="." unique_id=838919489 instance=ExtResource("1_o6mkr")]
 position = Vector2(560, 82)
@@ -51,3 +43,9 @@ position = Vector2(664, -163)
 
 [node name="MeteorSpawner2" parent="." unique_id=483139441 instance=ExtResource("6_nk1il")]
 position = Vector2(1027, -255)
+
+[node name="Block6" parent="." unique_id=883375790 instance=ExtResource("6_d6qko")]
+position = Vector2(184, 74)
+
+[node name="Block3" parent="." unique_id=998296315 instance=ExtResource("6_d6qko")]
+position = Vector2(717, 74)

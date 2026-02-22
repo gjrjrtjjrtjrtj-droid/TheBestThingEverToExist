@@ -10,14 +10,14 @@
 [node name="Node2D" type="Node2D" unique_id=137747988]
 
 [node name="Bapple" parent="." unique_id=255428371 instance=ExtResource("4_52x1o")]
-position = Vector2(316, -164)
+position = Vector2(221, -236)
 
 [node name="Block" parent="." unique_id=1427464235 instance=ExtResource("1_o6mkr")]
 position = Vector2(0, 61)
 scale = Vector2(1.0025651, 1.0170302)
 
 [node name="Block" parent="Block" unique_id=1599952663 instance=ExtResource("1_o6mkr")]
-position = Vector2(1423.3489, 3.9330163)
+position = Vector2(2481.6343, -37.36369)
 scale = Vector2(1.0025651, 1.0170302)
 
 [node name="Bob" parent="." unique_id=1201037633 instance=ExtResource("2_qmtf6")]
@@ -27,13 +27,13 @@ position = Vector2(-1, -5)
 position = Vector2(390, 59)
 
 [node name="Block2" parent="Block2" unique_id=1277816942 instance=ExtResource("1_o6mkr")]
-position = Vector2(688, -21)
+position = Vector2(1749, -63)
 
 [node name="WinnarStar" parent="." unique_id=642081613 instance=ExtResource("3_uawph")]
-position = Vector2(1432, -36)
+position = Vector2(2493, -78)
 
 [node name="Block5" parent="." unique_id=838919489 instance=ExtResource("1_o6mkr")]
-position = Vector2(560, 82)
+position = Vector2(1621, 40)
 
 [node name="Block5" parent="Block5" unique_id=1531728923 instance=ExtResource("1_o6mkr")]
 position = Vector2(334, -11)
@@ -48,4 +48,31 @@ position = Vector2(1027, -255)
 position = Vector2(184, 74)
 
 [node name="Block3" parent="." unique_id=998296315 instance=ExtResource("6_d6qko")]
-position = Vector2(717, 74)
+position = Vector2(1778, 32)
+
+[node name="Block4" parent="." unique_id=1893466847 instance=ExtResource("1_o6mkr")]
+position = Vector2(609, 93)
+
+[node name="Block7" parent="." unique_id=1464128582 instance=ExtResource("1_o6mkr")]
+position = Vector2(981, 37)
+
+[node name="Block8" parent="." unique_id=825361282 instance=ExtResource("6_d6qko")]
+position = Vector2(1210, 54)
+
+[node name="Block9" parent="." unique_id=272551139 instance=ExtResource("6_d6qko")]
+position = Vector2(1437, 25)
+
+[node name="Block10" parent="." unique_id=845356455 instance=ExtResource("1_o6mkr")]
+position = Vector2(778, 85)
+
+[node name="MeteorSpawner3" parent="." unique_id=135443778 instance=ExtResource("6_nk1il")]
+position = Vector2(1232, -264)
+
+[node name="MeteorSpawner4" parent="." unique_id=1788868483 instance=ExtResource("6_nk1il")]
+position = Vector2(1521, -159)
+
+[node name="MeteorSpawner5" parent="." unique_id=1628448285 instance=ExtResource("6_nk1il")]
+position = Vector2(1868, -313)
+
+[node name="MeteorSpawner6" parent="." unique_id=715213571 instance=ExtResource("6_nk1il")]
+position = Vector2(2196, -346)
